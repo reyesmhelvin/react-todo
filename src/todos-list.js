@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
+import TodoListHeader from './todos-list-header';
 
 class TodoList extends Component {
   render() {
     return (
-      <div>
         <table>
-          <thead>
-            <tr>
-              <th>Task</th>
-              <th>Action</th>
-            </tr>
-          </thead>
+          <TodoListHeader />
         </table>
-      </div>
     );
   }
 }

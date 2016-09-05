@@ -16,7 +16,7 @@ const tasks = [
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <h1>Todo List</h1>
         <TodoList />
       </div>
