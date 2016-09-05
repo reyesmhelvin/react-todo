@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TodoList from './todos-list';
 import './App.css';
 
-const tasks = [
+const todos = [
   {
     task: "write you next vivid plan for team bora",
     isCompleted: true
@@ -14,11 +14,18 @@ const tasks = [
 ];
 
 class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      todos
+    };
+  }
   render() {
     return (
       <div>
         <h1>Todo List</h1>
-        <TodoList />
+        <TodoList todos={this.state.todos}/>
       </div>
     );
   }
