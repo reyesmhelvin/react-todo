@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CreateTodo from './create-todo.js';
 import TodoList from './todos-list';
 import './App.css';
 
@@ -25,6 +26,7 @@ class App extends Component {
     return (
       <div>
         <h1>Todo List</h1>
+        <CreateTodo />
         <TodoList todos={this.state.todos}/>
       </div>
     );
